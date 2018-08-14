@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+
+    <ion-toolbar>
+
+      <button ion-button (click)="openMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+      <ion-title> Main Page </ion-title>
+
+    </ion-toolbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h1>This is the Main Page</h1>
+
+  <button ion-button block color="primary" (click)="navegar_pagina()">To Page 2</button>
+
+  <button ion-button block color="secondary" [navPush]="page2">To Page 2</button>
+
+</ion-content>

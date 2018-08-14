@@ -1,0 +1,24 @@
+<ion-menu [content]="mycontent">
+
+    <ion-header>
+      <ion-toolbar color="grey">
+        <ion-title> Menu </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+  <ion-content>
+    <ion-list>
+
+      <button ion-item (click)="openPage ( tabsPage )">
+          Open Tabs
+      </button>
+
+      <button ion-item (click)="openPage ( settings2Page )">
+          Open Settings 2
+      </button>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
